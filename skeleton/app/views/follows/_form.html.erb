@@ -25,5 +25,5 @@
 
 <% current_user.follows?(user) ? follow_state = "Unfollow" : follow_state = "Follow" %>
 
-<button class="follow-toggle" data-user-id="" data-initial-follow-state="<%= follow_state %>"></button>
+<button class="follow-toggle" data-user-id="<%= @user.id %>" data-initial-follow-state="<%= follow_state %>"></button>
 </form>
